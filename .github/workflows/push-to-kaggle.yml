@@ -1,0 +1,26 @@
+name: Push notebook to Kaggle
+
+# Manual trigger only. Kaggle's own linked-repo feature already pushes
+# Kaggle -> GitHub on every Save Version; auto-firing this on every push
+# would risk a push/pull ping-pong with that feature. Run this from the
+# Actions tab after editing depth_vs_width_kaggle.ipynb in GitHub and
+# wanting Kaggle to pick up the change.
+on:
+  workflow_dispatch:
+
+jobs:
+  push-to-kaggle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install kaggle
+
+      - env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        run: kaggle kernels push -p .

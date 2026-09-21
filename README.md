@@ -57,5 +57,7 @@ by_L: { "8000"|"4000"|"2000"|"1000"|"500":
 ## Note
 `depth_vs_width_kaggle.ipynb` is linked to Kaggle — edits made in the Kaggle notebook get pushed to this GitHub repo. When asked to do something here, first check/pull the latest push from Kaggle before acting.
 
+For the other direction (GitHub → Kaggle), run the **Push notebook to Kaggle** workflow (Actions tab → select it → "Run workflow") after editing the notebook here. It uploads `depth_vs_width_kaggle.ipynb` as a new version of the Kaggle kernel `bhuwanadhikari7788/notebookc6a1f68347` via `kernel-metadata.json`, using the `KAGGLE_USERNAME`/`KAGGLE_KEY` repo secrets. It's manual-trigger only, not automatic on push, to avoid a push/pull loop with Kaggle's own auto-commit-to-GitHub.
+
 ## Status
 Generation in progress. Results, figures, and the poster spec will be added once all 20 files exist.
