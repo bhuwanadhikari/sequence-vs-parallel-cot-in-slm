@@ -35,7 +35,9 @@ A sample capped at L tokens is the first L tokens of the same sample capped at 8
 
 `depth_vs_width_kaggle.ipynb` — **one Kaggle session = one (model, think, level)**. Set `MODEL_NAME`, `THINK`, `LEVEL` in the config cell and run all. Kaggle: GPU T4 ×2, Internet on. 20 sessions total (2 models × 2 modes × 5 levels), 688 sequences each.
 
-Each session writes one file and refuses to overwrite it:
+Requires a Kaggle secret named `GITHUB_TOKEN` (repo-scoped GitHub PAT) — Add-ons → Secrets. The GITHUB SYNC cell clones this repo into the session and pushes `outputs/` to `main` after every completed problem, so progress is never only local. If a session dies mid-level, the next session re-clones, sees whatever was already pushed, and resumes from the next unfinished problem instead of starting the level over.
+
+Each session writes one file, appending as it goes:
 
 ```
 outputs/<model>/<think|nothink>/level<L>.jsonl        # 43 problems × 16 samples, one JSON per line
