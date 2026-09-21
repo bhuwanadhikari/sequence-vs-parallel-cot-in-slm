@@ -52,5 +52,8 @@ by_L: { "8000"|"4000"|"2000"|"1000"|"500":
 
 `tokens` is the measured count (prefix + forcing continuation). `cluster` is the equivalence-class id within that problem's answer pool (`-1` = no answer). Save Version or download `outputs/` after each session; the notebook's last cell reads all files under `OUT_ROOT` + `EXTRA_INPUTS` and prints the iso-budget table with CIs.
 
+## Note
+`depth_vs_width_kaggle.ipynb` is linked to Kaggle — edits made in the Kaggle notebook get pushed to this GitHub repo. When asked to do something here, first check/pull the latest push from Kaggle before acting.
+
 ## Status
 Generation in progress. Results, figures, and the poster spec will be added once all 20 files exist.
