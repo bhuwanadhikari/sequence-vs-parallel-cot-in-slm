@@ -1,0 +1,17 @@
+model,mode,difficulty,median full tokens,p90 full tokens,% hit 8K cap,% closed </think>
+Qwen3-1.7B,think,easy,2157,5292,3.3,97.3
+Qwen3-1.7B,think,medium,2842,8000,16.7,86.0
+Qwen3-1.7B,think,hard,5048,8000,30.0,73.6
+Qwen3-1.7B,think,all,3036,8000,16.7,85.6
+Qwen3-1.7B,nothink,easy,316,715,0.0,
+Qwen3-1.7B,nothink,medium,444,1387,0.1,
+Qwen3-1.7B,nothink,hard,730,2260,1.5,
+Qwen3-1.7B,nothink,all,470,1514,0.6,
+Qwen3-4B,think,easy,2243,4694,1.7,98.3
+Qwen3-4B,think,medium,2915,7841,9.6,92.2
+Qwen3-4B,think,hard,4788,8000,24.6,78.9
+Qwen3-4B,think,all,3050,8000,12.5,89.3
+Qwen3-4B,nothink,easy,336,728,0.1,
+Qwen3-4B,nothink,medium,441,1213,0.3,
+Qwen3-4B,nothink,hard,771,2264,2.0,
+Qwen3-4B,nothink,all,484,1502,0.9,

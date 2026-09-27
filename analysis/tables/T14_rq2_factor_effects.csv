@@ -1,0 +1,19 @@
+factor,comparison,estimate pp,estimate pp lo,estimate pp hi,reading
+difficulty,Δ at easy,-1.0,-2.2,0.0,no clear winner
+difficulty,Δ at medium,-1.1,-4.3,1.3,no clear winner
+difficulty,Δ at hard,-8.8,-12.9,-4.7,one long wins
+difficulty,hard − easy,-7.8,-12.0,-3.6,changes the answer
+model size,Δ at 1.7B,-3.9,-5.7,-2.1,one long wins
+model size,Δ at 4B,-4.5,-6.6,-2.4,one long wins
+model size,4B − 1.7B,-0.6,-2.2,1.1,no clear change
+thinking mode,Δ at on,-10.2,-13.7,-7.1,one long wins
+thinking mode,Δ at off,1.8,0.8,2.8,votes win
+thinking mode,on − off,-12.0,-15.3,-9.0,changes the answer
+model size × mode,"4B − 1.7B, think",-0.1,-2.8,2.7,no clear change
+model size × mode,"4B − 1.7B, nothink",-1.1,-2.5,0.3,no clear change
+mode × model size,"on − off, 1.7B",-12.6,-16.0,-9.6,changes the answer
+mode × model size,"on − off, 4B",-11.5,-15.4,-7.9,changes the answer
+difficulty × model × mode,"hard − easy, 1.7B think",-14.1,-21.5,-6.8,changes the answer
+difficulty × model × mode,"hard − easy, 1.7B nothink",1.0,-1.3,3.2,no clear change
+difficulty × model × mode,"hard − easy, 4B think",-17.8,-26.4,-9.1,changes the answer
+difficulty × model × mode,"hard − easy, 4B nothink",-0.3,-4.0,3.1,no clear change

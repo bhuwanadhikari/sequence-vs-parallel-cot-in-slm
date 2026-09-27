@@ -1,0 +1,17 @@
+model,mode,difficulty,mixed-outcome problems,"mean tokens, correct","mean tokens, wrong",% problems where wrong is longer,"reflection words /1K tok, correct","reflection words /1K tok, wrong"
+Qwen3-1.7B,think,easy,7,5031,5560,57.1,5.84,8.55
+Qwen3-1.7B,think,medium,12,5148,6089,66.7,11.08,6.31
+Qwen3-1.7B,think,hard,33,6967,7674,72.7,6.61,6.66
+Qwen3-1.7B,think,all,52,6287,7024,69.2,7.29,6.85
+Qwen3-1.7B,nothink,easy,23,569,615,43.5,0.15,0.26
+Qwen3-1.7B,nothink,medium,21,879,1082,66.7,0.12,0.25
+Qwen3-1.7B,nothink,hard,50,1098,1195,72.0,0.08,0.19
+Qwen3-1.7B,nothink,all,94,920,1028,63.8,0.11,0.21
+Qwen3-4B,think,easy,3,6231,5544,0.0,5.4,6.76
+Qwen3-4B,think,medium,3,5784,7217,66.7,6.19,7.46
+Qwen3-4B,think,hard,20,7277,7767,50.0,6.38,7.29
+Qwen3-4B,think,all,26,6984,7447,46.2,6.05,7.25
+Qwen3-4B,nothink,easy,13,684,800,61.5,0.14,0.52
+Qwen3-4B,nothink,medium,9,1069,1623,44.4,0.23,0.21
+Qwen3-4B,nothink,hard,38,1634,1772,63.2,0.13,0.28
+Qwen3-4B,nothink,all,60,1344,1539,60.0,0.16,0.3
