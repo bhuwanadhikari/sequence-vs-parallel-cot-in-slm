@@ -1,0 +1,8 @@
+{
+  "name": "Poster Phase 2 Builder",
+  "id": "poster-phase2-builder-local",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page"
+}
